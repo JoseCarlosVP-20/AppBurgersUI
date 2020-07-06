@@ -17,6 +17,12 @@ namespace AppBurger.UI
         public MainPage()
         {
             InitializeComponent();
+            btnGrid.Clicked += BtnGrid_Clicked;
+        }
+
+        private void BtnGrid_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new GridPage());
         }
     }
 }

@@ -8,22 +8,20 @@
     <ContentPage.Content>
         <Grid RowSpacing="50" Margin="20,20,20,20" >
             <Grid.RowDefinitions>
-                <RowDefinition  Height="auto"/>
                 <RowDefinition  Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <Label Text="Pantalla 1" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title"/>
 
-            <Label Text="Formulario de contactos" Grid.Row="1"  FontSize="32" BackgroundColor="#FFF2CC" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="Formulario de contactos" Grid.Row="0"  FontSize="32" BackgroundColor="#FFF2CC" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-            <Grid Padding="20,40,20,0"  Grid.Row="2" BackgroundColor="#FFF2CC">
+            <Grid Padding="20,0,20,0"  Grid.Row="1" BackgroundColor="#FFF2CC">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -32,9 +30,9 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Label Text="Título" Grid.Row="0" Grid.Column="0" FontSize="22"  VerticalTextAlignment="Center"  BackgroundColor="#FFF2CC" />
+                <Label Text="Título" Grid.Row="0" Grid.Column="0" FontSize="22"  VerticalTextAlignment="Center"   />
 
-                <Entry Grid.Row="0" Grid.Column="1" BackgroundColor="#FFF2CC"/>
+                <Entry Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
 
                 <Label Text="Descripción" Grid.Row="1" Grid.ColumnSpan="2" FontSize="22"  VerticalTextAlignment="End" />
 

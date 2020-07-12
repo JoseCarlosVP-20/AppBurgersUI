@@ -11,7 +11,9 @@ namespace AppBurger.UI
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new FormOnePage();
+            
         }
 
         protected override void OnStart()

@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace AppBurger.UI
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FormTwoPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public FormTwoPage()
+        public HomePage()
         {
             InitializeComponent();
+        }
+        async void OnNextPageButtonClicked(object sender, EventArgs e)
+        {
+            // Page appearance not animated
+            await Navigation.PushAsync(new FormOnePage(), false);
         }
     }
 }

@@ -16,5 +16,10 @@ namespace AppBurger.UI
         {
             InitializeComponent();
         }
+        async void NextPageButtonClicked(object sender, EventArgs e)
+        {
+            // Page appearance not animated
+            await Navigation.PushAsync(new FormTwoPage(), false);
+        }
     }
 }

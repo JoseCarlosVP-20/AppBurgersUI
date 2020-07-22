@@ -11,8 +11,8 @@ namespace AppBurger.UI
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage(new MainPage());
-            MainPage = new FormOnePage();
+            MainPage = new NavigationPage(new HomePage());
+            //MainPage = new FormOnePage();
             
         }
 
